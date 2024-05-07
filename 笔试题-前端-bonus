@@ -1,0 +1,29 @@
+// Functional Component in TypeScript
+import React, { useState, useEffect } from 'react';
+
+const MyFunctionalComponent: React.FC = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Lifecycle method: componentDidMount
+    console.log("Component mounted");
+
+    // Cleanup function (equivalent to componentWillUnmount)
+    return () => {
+      console.log("Component unmounted");
+    };
+  }, []); // Empty dependency array to mimic componentDidMount
+
+  const handleClick = () => {
+    setCount(prevCount => prevCount + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={handleClick}>Increment</button>
+    </div>
+  );
+};
+
+export default MyFunctionalComponent;
