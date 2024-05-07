@@ -1,0 +1,16 @@
+<!-- email_verification.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Email Verification</h2>
+        <p>An email with verification link has been sent to your email address. Please check your email and verify your account.</p>
+    </div>
+</body>
+</html>
